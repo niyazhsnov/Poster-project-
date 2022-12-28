@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 
 function AddPoster() {
@@ -26,6 +27,11 @@ function AddPoster() {
   };
   return (
     <>
+       <Helmet>
+                <meta charSet="utf-8" />
+                <title>Add Poster</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <legend>Create Poster</legend>
       <Form>
         <Form.Group className="mb-3" controlId="formName">

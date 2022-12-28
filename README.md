@@ -1,3 +1,5 @@
+There are three pages here
+Home,Add Poster and Edit poster
 Using edit button on the cards u can edit default card values
 
 Using delete button on the cards u can delete card from site and also JSON server

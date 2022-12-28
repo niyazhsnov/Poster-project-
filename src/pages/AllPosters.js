@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import "./AllPosters.css";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
+import {Helmet} from "react-helmet";
 import DeleteConfirmation from "../components/shared/DeleteConfirmation";
 
 function AllPosters() {
@@ -45,6 +46,11 @@ function AllPosters() {
 
   return (
     <>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <DeleteConfirmation
         showModal={showModal}
         hideDeleteModalHandler={hideDeleteModalHandler}

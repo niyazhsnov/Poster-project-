@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import {Helmet} from "react-helmet";
 
 function UpdatePoster() {
   const posterName = useRef("");
@@ -38,6 +39,11 @@ function UpdatePoster() {
 
   return (
     <>
+         <Helmet>
+                <meta charSet="utf-8" />
+                <title>Edit Poster</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
       <legend>Update</legend>
       <Form>
         <Form.Group className="mb-3" controlId="formName">
