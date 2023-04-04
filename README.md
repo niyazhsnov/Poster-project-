@@ -16,4 +16,4 @@ to run project:
 
 3.npm run start_react(this command for react)
 
-Müellim bu arada formik ve yup npm leri error verdiler ona göre yazmamışam
+
